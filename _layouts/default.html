@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.data.profile.language | default: 'en' | escape }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="{{ site.data.profile.name | escape }}">
+    <title>{{ site.data.profile.page_title | escape }}</title>
+    {% assign stylesheet = site.static_files | where: 'path', '/assets/css/jemdoc.css' | first %}
+    <link rel="stylesheet" href="{{ '/assets/css/jemdoc.css' | relative_url }}?v={{ stylesheet.modified_time | date: '%s' }}">
+    {% include analytics.html %}
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

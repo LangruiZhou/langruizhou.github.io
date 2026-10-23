@@ -1,0 +1,7 @@
+{% assign biography = site.data.biography %}
+{% if biography.text and biography.text != empty %}
+<section id="biography" class="content-section biography">
+  <h2 class="roman-title">{{ biography.title | escape }}</h2>
+  {{ biography.text | markdownify }}
+</section>
+{% endif %}

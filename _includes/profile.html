@@ -1,0 +1,26 @@
+{% assign profile = site.data.profile %}
+<header id="profile" class="profile">
+  <img src="{{ profile.avatar | relative_url }}" width="188" height="235" class="profile-photo" alt="{{ profile.name | escape }}">
+  <div class="profile-details">
+    <h1 class="roman-title">{{ profile.name | escape }}</h1>
+    <p class="profile-role">{{ profile.role | escape }}</p>
+    <div class="profile-affiliations">
+      {% for affiliation in profile.affiliations %}
+        <div>{% if affiliation.url %}<a href="{{ affiliation.url | escape }}">{{ affiliation.name | escape }}</a>{% else %}{{ affiliation.name | escape }}{% endif %}</div>
+      {% endfor %}
+    </div>
+    <div class="profile-contacts">
+      {% if profile.email and profile.email != empty %}
+        <p class="profile-email">{{ profile.email | escape }}</p>
+      {% endif %}
+      {% if profile.links and profile.links != empty %}
+        <nav class="profile-links" aria-label="Academic profiles">
+          {% for link in profile.links %}
+            <a href="{{ link.url | escape }}">{{ link.label | escape }}</a>
+            {% unless forloop.last %}<span class="profile-link-separator" aria-hidden="true">·</span>{% endunless %}
+          {% endfor %}
+        </nav>
+      {% endif %}
+    </div>
+  </div>
+</header>

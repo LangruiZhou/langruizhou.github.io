@@ -1,0 +1,19 @@
+# 个人信息；图片路径相对于项目根目录。
+page_title: "Langrui Zhou - Homepage"
+language: "en"
+name: "Langrui Zhou"
+role: "Ph.D. Student"
+avatar: "/larry.png"
+email: "lrzhou[AT]seu[DOT]edu[DOT]cn"
+# 沿用原主页的统计 ID；留空字符串可关闭该脚本。
+analytics_tracking_id: "UA-87320911-1"
+affiliations:
+  - name: "School of Biological Science and Medical Engineering"
+    url: "https://bme.seu.edu.cn"
+  - name: "Southeast University"
+    url: "https://www.seu.edu.cn"
+links:
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=10bbA_AAAAAJ&hl=en"
+  - label: "GitHub"
+    url: "https://github.com/LangruiZhou"

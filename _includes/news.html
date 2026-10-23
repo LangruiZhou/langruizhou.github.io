@@ -1,0 +1,20 @@
+{% assign news = site.data.news %}
+{% if news.items and news.items != empty %}
+<section id="news" class="content-section">
+  <h2 id="news-title" class="roman-title">{{ news.title | escape }}</h2>
+  <div class="news-scroll" role="region" aria-labelledby="news-title" tabindex="0">
+    <ul>
+      {% for item in news.items %}
+        <li class="news-item">
+          <span class="news-date">[{{ item.date | escape }}]</span>
+          {% assign tag = item.tag | downcase %}
+          {% if tag == 'paper' or tag == 'award' or tag == 'service' %}
+            <span class="news-tag news-tag--{{ tag }}">{{ tag | upcase }}</span>
+          {% endif %}
+          <div>{{ item.text | markdownify }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,82 @@
+title: "Publications"
+under_review_title: "Under Review"
+# 已发表：status: published，year 为不加引号的年份，按年份倒序分组。
+# 在审：status: under_review，不需要填写 year 或 venue。
+# 同一分组内按文件顺序显示；corresponding_authors 中的姓名会标记 *。
+# links 为可选字段，可增加 paper、code、dataset 等任意标签。
+# label 的大小写按填写内容原样显示，不自动转换。
+items:
+  - title: "Noise2Match: Self-Supervised Low-Dose CT Denoising via Adaptive Inter-Slice Matching."
+    status: published
+    year: 2026
+    authors: ["Langrui Zhou", "Guang Li", "Xinyu Huang", "Ziteng Zhou", "Zuyang Huang", "Hongming Shan", "Shouhua Luo", "Ning Gu"]
+    corresponding_authors: ["Guang Li"]
+    venue: "IEEE Transactions on Medical Imaging"
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1109/TMI.2026.3744092"
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2610.18379"
+      - label: "Code"
+        url: "https://github.com/LangruiZhou/Noise2Match"
+
+  - title: "WaTER: Leveraging Wavelet Transform and Transformer-based Cross Attention for Airway Segmentation from CT Images."
+    status: published
+    year: 2026
+    authors: ["Ziteng Zhou", "Zuyang Huang", "Langrui Zhou", "Xinyu Huang", "Guang Li", "Ning Gu"]
+    corresponding_authors: ["Guang Li"]
+    venue: "Biomedical Signal Processing and Control"
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1016/j.bspc.2025.108856"
+      - label: "Code"
+        url: "https://github.com/zzthaoshuai/WaTER"
+
+  - title: "Breaking the Disconnection Dilemma in Class-imbalanced Cerebrovascular Segmentation."
+    status: published
+    year: 2025
+    authors: ["Ziteng Zhou", "Xinyu Huang", "Langrui Zhou", "Huiru Wang", "Guang Li"]
+    corresponding_authors: ["Guang Li"]
+    venue: "ISBI"
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1109/ISBI60581.2025.10980681"
+
+  - title: "A Self-contained Calibration Scheme for Micro CT with Irregular Trajectories Based on Phantom Auto-measurement."
+    status: published
+    year: 2025
+    authors: ["Guang Li", "Xinyu Huang", "Xue Chen", "Huiru Wang", "Langrui Zhou", "Xu Ji", "Yang Chen", "Shouhua Luo"]
+    corresponding_authors: ["Guang Li", "Shouhua Luo"]
+    venue: "IEEE Transactions on Instrument and Measurement"
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1109/TIM.2025.3527524"
+
+  - title: "Reliable Multi-modal Medical Image-to-image Translation Independent of Pixel-wise Aligned Data."
+    status: published
+    year: 2024
+    authors: ["Langrui Zhou", "Guang Li"]
+    corresponding_authors: ["Guang Li"]
+    venue: "Medical Physics"
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1002/mp.17362"
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2408.14270"
+
+  - title: "MARGANVAC: Metal Artifact Reduction Method Based on Generative Adversarial Network with Variable Constraints."
+    status: published
+    year: 2023
+    authors: ["Guang Li", "Longyin Ji", "Chenyu You", "Shuai Gao", "Langrui Zhou", "Keshu Bai", "Shouhua Luo", "Ning Gu"]
+    corresponding_authors: ["Ning Gu"]
+    venue: "Physics in Medicine and Biology"
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1088/1361-6560/acf8ac"
+      - label: "Dataset"
+        url: "https://github.com/LangruiZhou/HISMAR"
+
+  - title: "PCG-IMD: Prior-Guided Cascade-Gated Implicit Material Decomposition in Photon-Counting Dual-Energy Micro-CT."
+    status: under_review
+    authors: ["Xinyu Huang", "Longqi Zhan", "Jiacheng Wang", "Langrui Zhou", "Chunyi Liu", "Chenjiang Wu", "Shouhua Luo"]
+    corresponding_authors: ["Chenjiang Wu", "Shouhua Luo"]

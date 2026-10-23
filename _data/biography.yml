@@ -1,0 +1,7 @@
+title: "Biography"
+# text 支持 Markdown；保留缩进即可换行写作，空一行会分成新段落。
+text: >-
+  I am a Ph.D. student from the School of Biological Science and Medical Engineering at Southeast University,
+  where I am fortunately supervised by [Prof. *Ning Gu*](https://lbmd.seu.edu.cn/nano/info/1060/1648.htm)
+  and [Prof. *Guang Li*](https://bme.seu.edu.cn/2019/0903/c463a284708/page.htm).
+  My research interests include: *Computer Vision*, *Medical Imaging*, *Micro-CT* and *AI for Medicine*.

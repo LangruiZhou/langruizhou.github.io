@@ -1,0 +1,25 @@
+title: "News"
+# 按文件中的顺序展示；新消息添加在 items 顶部。日期加引号。
+# tag 可填写 paper（论文）、award（获奖）或 service（学术服务），也可省略。
+items:
+  - date: "10/2026"
+    tag: award
+    text: "Honored to receive the First-Class Scholarship of Southeast University."
+  - date: "10/2026"
+    tag: paper
+    text: "Noise2Match for self-supervised low-dose CT denoising is accepted by *IEEE TMI*."
+  - date: "10/2025"
+    tag: paper
+    text: "WaTER for CT airway segmentation is accepted by *BSPC*."
+  - date: "01/2025"
+    tag: paper
+    text: "One paper for class-imbalanced cerebrovascular segmentation is accepted by *ISBI 2025*."
+  - date: "12/2024"
+    tag: paper
+    text: "One paper for irregular-trajectory micro-CT calibration is accepted by *IEEE TIM*."
+  - date: "08/2024"
+    tag: paper
+    text: "MITIA for weakly paired medical image translation is accepted by *Medical Physics*."
+  - date: "09/2023"
+    tag: paper
+    text: "MARGANVAC for CT metal artifact reduction is accepted by *PMB*."

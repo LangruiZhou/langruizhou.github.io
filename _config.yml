@@ -1,0 +1,12 @@
+# 构建设置：日常内容请统一在 _data/ 中修改。
+url: "https://langruizhou.github.io"
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - preview.command

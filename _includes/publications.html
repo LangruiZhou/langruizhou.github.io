@@ -1,0 +1,26 @@
+{% assign publications = site.data.publications %}
+{% if publications.items and publications.items != empty %}
+<section id="publications" class="content-section">
+  <h2 class="roman-title">{{ publications.title | escape }}</h2>
+  {% assign published = publications.items | where: 'status', 'published' %}
+  {% assign years = published | map: 'year' | uniq | sort | reverse %}
+  {% for year in years %}
+    <h3 class="publication-group">{{ year | escape }}</h3>
+    <ul>
+      {% assign papers = published | where: 'year', year %}
+      {% for paper in papers %}
+        {% include publication.html paper=paper %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  {% assign under_review = publications.items | where: 'status', 'under_review' %}
+  {% if under_review != empty %}
+    <h3 class="publication-group">{{ publications.under_review_title | escape }}</h3>
+    <ul>
+      {% for paper in under_review %}
+        {% include publication.html paper=paper %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
+{% endif %}

@@ -1,0 +1,14 @@
+{% assign services = site.data.services %}
+{% if services.groups and services.groups != empty %}
+<section id="academic-services" class="content-section">
+  <h2 class="roman-title">{{ services.title | escape }}</h2>
+  {% for group in services.groups %}
+    <h3 class="publication-group">{{ group.title | escape }}</h3>
+    <ul>
+      {% for item in group.items %}
+        <li>{% if item.url %}<a href="{{ item.url | escape }}">{{ item.name | escape }}</a>{% else %}{{ item.name | escape }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>
+{% endif %}
